@@ -1,4 +1,12 @@
 {
+  "name": "reactportfolio-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix MyProjectt run dev",
+    "build": "npm --prefix MyProjectt run build",
+    "lint": "npm --prefix MyProjectt run lint",
+    "preview": "npm --prefix MyProjectt run preview"
+  },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.2",
     "tailwindcss": "^4.2.2"
