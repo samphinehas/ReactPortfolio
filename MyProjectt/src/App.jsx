@@ -1,105 +1,160 @@
 import './App.css'
 
 const profile = {
-  name: 'Alex Morgan',
-  role: 'Frontend developer building polished digital products',
-  location: 'Based in India, collaborating worldwide',
-  blurb:
-    'I design and build fast, memorable interfaces for startups, agencies, and founders who want their product to feel premium from the first click.',
-  availability: 'Available for freelance projects and full-time roles',
-  email: 'hello@alexmorgan.dev',
-  resumeLabel: 'Request Resume',
+  name: 'SAMPHINEHAS S',
+  role: 'AI & ML Engineering Student | MERN Stack Developer',
+  headline:
+    'Building practical AI and web experiences that turn ideas into usable products.',
+  summary:
+    'I am a B.E. CSE (AIML) student at Sri Eshwar College of Engineering with hands-on experience in MERN stack development, AI-powered learning tools, and immersive simulation projects. I enjoy building applications that blend strong problem-solving with clean user experiences.',
+  phone: '8667370527',
+  email: 'samphinehas.s2024aiml@sece.ac.in',
+  institution: 'Sri Eshwar College of Engineering',
 }
 
 const stats = [
-  { value: '5+', label: 'Years crafting product experiences' },
-  { value: '18', label: 'Launches delivered across web and mobile' },
-  { value: '92%', label: 'Clients who return for a second build' },
+  { value: '7.45', label: 'CGPA up to 2nd semester' },
+  { value: '3', label: 'Major projects built and presented' },
+  { value: '250+', label: 'SkillRack problems solved' },
 ]
 
-const featuredProjects = [
+const education = [
   {
-    title: 'Northstar Commerce',
+    title: 'B.E CSE (AIML)',
+    place: 'Sri Eshwar College of Engineering',
+    detail: 'CGPA: 7.45 (up to 2nd sem)',
+    period: '2024 - 2028',
+  },
+  {
+    title: 'HSC',
+    place: 'Kendriya Vidyalaya Coimbatore',
+    detail: '82%',
+    period: '2022 - 2024',
+  },
+  {
+    title: 'SSLC',
+    place: 'Kendriya Vidyalaya Coimbatore',
+    detail: '88%',
+    period: '2021 - 2022',
+  },
+]
+
+const internship = {
+  title: 'MERN Stack Intern',
+  company: 'Better Tomorrow',
+  period: '2025',
+  project: 'FlavorVerse',
+  summary:
+    'Developed a full-stack recipe finder web application using the MERN stack, enabling users to search, filter, and explore recipes based on ingredients, cuisine, and dietary preferences.',
+  points: [
+    'Built RESTful APIs, dynamic search, advanced filters, and CRUD operations for recipes and favorites.',
+    'Created a responsive React interface with interactive animations for a smoother user experience.',
+    'Implemented secure backend services with Express and Node.js and a scalable MongoDB plus Mongoose architecture.',
+  ],
+  stack: ['React JS', 'Node JS', 'Express JS', 'MongoDB'],
+}
+
+const projects = [
+  {
+    title: 'Socratic AI Tutor',
+    subtitle: 'Intelligent AI-Based Learning Assistant',
     summary:
-      'A storefront redesign focused on mobile speed, clearer product storytelling, and a smoother checkout journey.',
-    impact: '38% increase in mobile conversions after launch',
-    stack: ['React', 'Design systems', 'Performance'],
+      'Developed an AI-powered tutoring system based on the Socratic method to improve conceptual understanding through guided questioning.',
+    points: [
+      'Used NLP and LLMs to analyze student queries and generate step-by-step, thought-provoking responses instead of direct answers.',
+      'Designed a responsive web interface for real-time interaction.',
+      'Added adaptive learning features to personalize difficulty and track student progress.',
+    ],
+    stack: ['AI', 'NLP', 'LLMs', 'Web UI'],
   },
   {
-    title: 'Pulse Analytics',
+    title: 'VR-Based Disaster Rescue Game',
+    subtitle: 'Immersive Emergency Response Simulation',
     summary:
-      'A SaaS dashboard with modular data cards, guided onboarding, and a visual language built for dense information.',
-    impact: 'Cut onboarding friction by 41% in the first month',
-    stack: ['Product UI', 'Dashboard UX', 'Accessibility'],
+      'Built a disaster rescue simulation game in Unity to create an immersive emergency response experience.',
+    points: [
+      'Designed interactive scenarios where players escape from a fire-affected building while completing rescue tasks.',
+      'Implemented realistic fire effects, task-based objectives, health indicators, and interactive VR controls.',
+      'Focused on improving decision-making skills and emergency preparedness through experiential learning.',
+    ],
+    stack: ['Unity', 'VR', 'Simulation Design'],
   },
   {
-    title: 'Canvas Studio',
+    title: 'AccessLens',
+    subtitle: 'AI Navigation Assistant for the Visually Impaired',
     summary:
-      'A personal brand and booking experience for a creative studio that needed personality without sacrificing clarity.',
-    impact: 'Tripled qualified inbound leads from the website',
-    stack: ['Brand web', 'Motion', 'Responsive design'],
+      'Developed an assistive AI system that helps visually impaired users navigate safely with real-time audio guidance.',
+    points: [
+      'Used YOLO for real-time object detection to identify obstacles and hazards.',
+      'Processed live camera input to provide immediate environmental awareness.',
+      'Focused on accessibility and safer day-to-day navigation support.',
+    ],
+    stack: ['YOLO', 'Computer Vision', 'Assistive AI'],
   },
 ]
 
-const experience = [
+const certifications = [
+  'Web Development | Udemy | 2025',
+  'C Training by IIT Bombay | 2024',
+  'C++ Training by IIT Bombay | 2024',
+  'HTML, CSS for Beginner | Udemy | 2024',
+]
+
+const achievements = [
+  'Attended the OWASP meetup organized by Kumaraguru College of Technology.',
+  'Participated in a 24-hour National Hackathon conducted by N.G.P College.',
+  'Participated in Smart India Hackathon at the college level.',
+  'Secured third prize in a National Level 8-hour Hackathon at MKCE.',
+]
+
+const codingProfiles = [
   {
-    period: '2024 - Present',
-    title: 'Senior Frontend Developer',
-    company: 'Independent',
-    description:
-      'Partnering with early-stage teams to take products from rough ideas to production-ready interfaces.',
+    name: 'LeetCode',
+    stat: 'Solved 20+ problems',
+    detail: 'Global Rank: 3,687,265',
   },
   {
-    period: '2021 - 2024',
-    title: 'Product Designer & Developer',
-    company: 'Orbit Labs',
-    description:
-      'Led design-to-code delivery for marketing sites, internal tools, and customer-facing dashboards.',
-  },
-  {
-    period: '2019 - 2021',
-    title: 'UI Engineer',
-    company: 'Studio Nine',
-    description:
-      'Built reusable components, improved responsiveness, and helped turn static mockups into maintainable React apps.',
+    name: 'SkillRack',
+    stat: 'Solved 250+ problems',
+    detail: 'Profile link can be added here',
   },
 ]
 
-const services = [
+const skillGroups = [
   {
-    title: 'Portfolio & Brand Sites',
-    text: 'Distinctive landing pages and personal brands that feel intentional instead of template-driven.',
+    title: 'Programming',
+    items: ['C', 'C++', 'Python', 'Java', 'JavaScript'],
   },
   {
-    title: 'Product Interface Design',
-    text: 'Clean, scalable screens for SaaS products, dashboards, internal tools, and MVPs.',
+    title: 'Core Concepts',
+    items: ['DSA', 'OOP', 'DBMS'],
   },
   {
-    title: 'Frontend Build & Polish',
-    text: 'Responsive implementation, performance tuning, accessibility fixes, and launch-ready refinement.',
+    title: 'Web Technologies',
+    items: ['HTML', 'CSS', 'JavaScript', 'React JS'],
+  },
+  {
+    title: 'Database',
+    items: ['MySQL', 'MongoDB'],
+  },
+  {
+    title: 'Tools',
+    items: [
+      'VS Code',
+      'IntelliJ',
+      'Canva',
+      'Excel',
+      'PowerPoint',
+      'GitHub',
+      'Postman',
+      'Google Colab',
+      'MS Office',
+      'CapCut',
+    ],
   },
 ]
 
-const testimonials = [
-  {
-    quote:
-      'Alex brought structure to the chaos and gave our product a visual identity that finally matched the quality of the service.',
-    author: 'Priya Mehta',
-    role: 'Founder, Northstar Commerce',
-  },
-  {
-    quote:
-      'Fast, thoughtful, and unusually detail-oriented. Every screen felt sharper after Alex touched it.',
-    author: 'Daniel Brooks',
-    role: 'Product Lead, Pulse Analytics',
-  },
-]
-
-const links = [
-  { label: 'GitHub', href: 'https://github.com/alexmorgan' },
-  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/alexmorgan' },
-  { label: 'Behance', href: 'https://www.behance.net/alexmorgan' },
-]
+const profiles = ['GitHub', 'LinkedIn']
 
 function App() {
   return (
@@ -107,19 +162,20 @@ function App() {
       <header className="site-header">
         <div className="container nav-wrap">
           <a className="brand" href="#top">
-            <span className="brand-mark">AM</span>
-            <span>Alex Morgan</span>
+            <span className="brand-mark">SS</span>
+            <span>{profile.name}</span>
           </a>
 
           <nav className="site-nav" aria-label="Primary">
-            <a href="#work">Work</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
+            <a href="#education">Education</a>
+            <a href="#internship">Internship</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
           </nav>
 
           <a className="nav-cta" href={`mailto:${profile.email}`}>
-            Let&apos;s Talk
+            Contact Me
           </a>
         </div>
       </header>
@@ -128,18 +184,23 @@ function App() {
         <section className="hero-section">
           <div className="container hero-grid">
             <div className="hero-copy">
-              <p className="eyebrow">{profile.availability}</p>
+              <p className="eyebrow">{profile.institution}</p>
               <h1>{profile.role}</h1>
-              <p className="hero-text">{profile.blurb}</p>
-              <p className="hero-location">{profile.location}</p>
+              <p className="hero-text">{profile.headline}</p>
+              <p className="hero-location">{profile.summary}</p>
 
               <div className="hero-actions">
-                <a className="button button-primary" href="#work">
-                  Explore Projects
+                <a className="button button-primary" href="#projects">
+                  View Projects
                 </a>
                 <a className="button button-secondary" href={`mailto:${profile.email}`}>
-                  {profile.resumeLabel}
+                  Email Me
                 </a>
+              </div>
+
+              <div className="contact-strip">
+                <a href={`tel:${profile.phone}`}>Phone: {profile.phone}</a>
+                <a href={`mailto:${profile.email}`}>Email: {profile.email}</a>
               </div>
 
               <ul className="stat-grid" aria-label="Highlights">
@@ -161,18 +222,18 @@ function App() {
               </div>
 
               <div className="hero-card-body">
-                <p className="card-label">Current focus</p>
-                <h2>Designing bold interfaces with calm, usable systems underneath.</h2>
+                <p className="card-label">Quick Snapshot</p>
+                <h2>Student developer focused on AI, accessibility, and full-stack products.</h2>
                 <p>
-                  I like crisp structure, strong typography, fast performance, and just
-                  enough motion to make a site feel alive.
+                  My portfolio brings together AI tutoring, assistive technology, virtual
+                  reality simulation, and MERN stack application development.
                 </p>
 
                 <div className="chip-list">
-                  <span>React</span>
-                  <span>UI Systems</span>
-                  <span>Motion</span>
-                  <span>Accessibility</span>
+                  <span>AI / ML</span>
+                  <span>MERN Stack</span>
+                  <span>React JS</span>
+                  <span>Problem Solving</span>
                 </div>
               </div>
             </aside>
@@ -181,36 +242,88 @@ function App() {
 
         <section className="logo-strip">
           <div className="container logo-strip-inner">
-            <p>Trusted by teams building SaaS, ecommerce, creator brands, and internal tools.</p>
-            <div className="logo-cloud" aria-label="Project categories">
-              <span>Startups</span>
-              <span>Studios</span>
-              <span>Founders</span>
-              <span>Agencies</span>
-              <span>Product Teams</span>
+            <p>Focused on learning fast, building real projects, and growing through hackathons and internships.</p>
+            <div className="logo-cloud" aria-label="Public profiles">
+              {profiles.map((item) => (
+                <span key={item}>{item}</span>
+              ))}
             </div>
           </div>
         </section>
 
-        <section className="content-section" id="work">
+        <section className="content-section" id="education">
           <div className="container">
             <div className="section-heading">
-              <p className="eyebrow">Selected Work</p>
-              <h2>Recent projects shaped for clarity, speed, and personality.</h2>
+              <p className="eyebrow">Education</p>
+              <h2>Academic background and core learning journey.</h2>
             </div>
 
-            <div className="project-grid">
-              {featuredProjects.map((project, index) => (
-                <article
-                  className={`project-card ${index === 0 ? 'project-card-featured' : ''}`}
-                  key={project.title}
-                >
+            <div className="timeline">
+              {education.map((item) => (
+                <article className="timeline-item" key={`${item.title}-${item.period}`}>
+                  <span className="timeline-period">{item.period}</span>
+                  <h3>{item.title}</h3>
+                  <p className="timeline-company">{item.place}</p>
+                  <p>{item.detail}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="content-section" id="internship">
+          <div className="container">
+            <div className="section-heading">
+              <p className="eyebrow">Internship</p>
+              <h2>Industry experience built through a MERN stack internship.</h2>
+            </div>
+
+            <article className="feature-panel">
+              <div className="feature-panel-top">
+                <div>
+                  <span className="timeline-period">{internship.period}</span>
+                  <h3>
+                    {internship.title} - {internship.company}
+                  </h3>
+                  <p className="timeline-company">{internship.project}</p>
+                </div>
+                <div className="project-tags" aria-label="Internship stack">
+                  {internship.stack.map((item) => (
+                    <span key={item}>{item}</span>
+                  ))}
+                </div>
+              </div>
+
+              <p className="feature-summary">{internship.summary}</p>
+              <ul className="detail-list">
+                {internship.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section className="content-section" id="projects">
+          <div className="container">
+            <div className="section-heading">
+              <p className="eyebrow">Projects</p>
+              <h2>Projects spanning AI tutoring, VR simulation, and assistive technology.</h2>
+            </div>
+
+            <div className="project-grid project-grid-wide">
+              {projects.map((project) => (
+                <article className="project-card" key={project.title}>
                   <div className="project-topline">
-                    <span>0{index + 1}</span>
-                    <p>{project.impact}</p>
+                    <span>{project.subtitle}</span>
                   </div>
                   <h3>{project.title}</h3>
                   <p>{project.summary}</p>
+                  <ul className="detail-list">
+                    {project.points.map((point) => (
+                      <li key={point}>{point}</li>
+                    ))}
+                  </ul>
                   <div className="project-tags" aria-label={`${project.title} skills`}>
                     {project.stack.map((item) => (
                       <span key={item}>{item}</span>
@@ -222,71 +335,73 @@ function App() {
           </div>
         </section>
 
-        <section className="content-section about-section" id="about">
-          <div className="container about-grid">
-            <div className="about-copy">
-              <p className="eyebrow">About</p>
-              <h2>A portfolio should feel like a point of view, not a placeholder.</h2>
-              <p>
-                My work sits between design and development. I care about the visual
-                language, but I care just as much about how it scales, performs, and
-                supports the people using it every day.
-              </p>
-              <p>
-                When I join a project, I usually help shape the message, refine the
-                interaction model, and build the frontend so the final result keeps its
-                character all the way to production.
-              </p>
+        <section className="content-section" id="certifications">
+          <div className="container split-grid">
+            <div>
+              <div className="section-heading compact-heading">
+                <p className="eyebrow">Certifications</p>
+                <h2>Courses and training completed.</h2>
+              </div>
+              <div className="stacked-list">
+                {certifications.map((item) => (
+                  <article className="list-card" key={item}>
+                    <p>{item}</p>
+                  </article>
+                ))}
+              </div>
             </div>
 
-            <div className="timeline">
-              {experience.map((item) => (
-                <article className="timeline-item" key={`${item.period}-${item.company}`}>
-                  <span className="timeline-period">{item.period}</span>
-                  <h3>{item.title}</h3>
-                  <p className="timeline-company">{item.company}</p>
-                  <p>{item.description}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="content-section" id="services">
-          <div className="container">
-            <div className="section-heading">
-              <p className="eyebrow">Services</p>
-              <h2>Ways we can work together.</h2>
-            </div>
-
-            <div className="service-grid">
-              {services.map((service) => (
-                <article className="service-card" key={service.title}>
-                  <h3>{service.title}</h3>
-                  <p>{service.text}</p>
-                </article>
-              ))}
+            <div>
+              <div className="section-heading compact-heading">
+                <p className="eyebrow">Achievements</p>
+                <h2>Hackathons, meetups, and participation highlights.</h2>
+              </div>
+              <div className="stacked-list">
+                {achievements.map((item) => (
+                  <article className="list-card" key={item}>
+                    <p>{item}</p>
+                  </article>
+                ))}
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="content-section testimonials-section">
-          <div className="container">
-            <div className="section-heading">
-              <p className="eyebrow">Client Notes</p>
-              <h2>Feedback from people I&apos;ve built with.</h2>
+        <section className="content-section" id="profiles">
+          <div className="container split-grid">
+            <div>
+              <div className="section-heading compact-heading">
+                <p className="eyebrow">Coding Profiles</p>
+                <h2>Practice and consistency through coding platforms.</h2>
+              </div>
+              <div className="service-grid service-grid-stack">
+                {codingProfiles.map((item) => (
+                  <article className="service-card" key={item.name}>
+                    <h3>{item.name}</h3>
+                    <p>{item.stat}</p>
+                    <p className="muted-top">{item.detail}</p>
+                  </article>
+                ))}
+              </div>
             </div>
 
-            <div className="testimonial-grid">
-              {testimonials.map((testimonial) => (
-                <blockquote className="testimonial-card" key={testimonial.author}>
-                  <p>&ldquo;{testimonial.quote}&rdquo;</p>
-                  <footer>
-                    <strong>{testimonial.author}</strong>
-                    <span>{testimonial.role}</span>
-                  </footer>
-                </blockquote>
-              ))}
+            <div id="skills">
+              <div className="section-heading compact-heading">
+                <p className="eyebrow">Skills</p>
+                <h2>Technical strengths across programming, web, and tools.</h2>
+              </div>
+              <div className="skill-groups">
+                {skillGroups.map((group) => (
+                  <article className="service-card" key={group.title}>
+                    <h3>{group.title}</h3>
+                    <div className="project-tags">
+                      {group.items.map((item) => (
+                        <span key={item}>{item}</span>
+                      ))}
+                    </div>
+                  </article>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -296,10 +411,10 @@ function App() {
         <div className="container contact-panel">
           <div>
             <p className="eyebrow">Contact</p>
-            <h2>Have something ambitious in mind?</h2>
+            <h2>Let&apos;s connect for projects, internships, and opportunities.</h2>
             <p className="footer-text">
-              I&apos;m open to product design partnerships, frontend builds, and portfolio
-              refreshes that need a sharper visual identity.
+              You can reach me directly by phone or email. GitHub and LinkedIn can be
+              added once the profile URLs are available.
             </p>
           </div>
 
@@ -307,11 +422,14 @@ function App() {
             <a className="button button-primary" href={`mailto:${profile.email}`}>
               {profile.email}
             </a>
+            <a className="button button-secondary" href={`tel:${profile.phone}`}>
+              {profile.phone}
+            </a>
             <div className="social-links" aria-label="Social links">
-              {links.map((link) => (
-                <a href={link.href} key={link.label} rel="noreferrer" target="_blank">
-                  {link.label}
-                </a>
+              {profiles.map((item) => (
+                <span className="static-pill" key={item}>
+                  {item}
+                </span>
               ))}
             </div>
           </div>

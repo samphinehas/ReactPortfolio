@@ -172,6 +172,25 @@
   margin: 2rem 0 2.2rem;
 }
 
+.contact-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.contact-strip a,
+.static-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-soft);
+  font-size: 0.92rem;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -358,6 +377,10 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.project-grid-wide {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .project-card {
   padding: 1.5rem;
   border-radius: 1.6rem;
@@ -401,6 +424,16 @@
   margin-top: 1.4rem;
 }
 
+.detail-list {
+  margin: 1rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+}
+
+.detail-list li + li {
+  margin-top: 0.7rem;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
@@ -430,6 +463,30 @@
   border-radius: 1.45rem;
 }
 
+.feature-panel,
+.list-card {
+  border: 1px solid var(--border-soft);
+  background: var(--surface);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow-soft);
+  border-radius: 1.6rem;
+}
+
+.feature-panel {
+  padding: 1.6rem;
+}
+
+.feature-panel-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.feature-summary {
+  margin-top: 1rem;
+}
+
 .timeline-company {
   margin-bottom: 0.7rem;
   color: var(--text-strong);
@@ -443,6 +500,38 @@
 .service-card {
   padding: 1.5rem;
   border-radius: 1.5rem;
+}
+
+.service-grid-stack {
+  grid-template-columns: 1fr;
+}
+
+.split-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.compact-heading {
+  margin-bottom: 1rem;
+}
+
+.stacked-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.list-card {
+  padding: 1.2rem 1.3rem;
+}
+
+.skill-groups {
+  display: grid;
+  gap: 1rem;
+}
+
+.muted-top {
+  margin-top: 0.75rem;
 }
 
 .testimonial-grid {
@@ -527,9 +616,11 @@
   .hero-grid,
   .about-grid,
   .project-grid,
+  .project-grid-wide,
   .service-grid,
   .testimonial-grid,
-  .contact-panel {
+  .contact-panel,
+  .split-grid {
     grid-template-columns: 1fr;
   }
 
@@ -559,6 +650,10 @@
   .social-links {
     justify-self: start;
     justify-content: flex-start;
+  }
+
+  .feature-panel-top {
+    flex-direction: column;
   }
 }
 
